@@ -14,7 +14,7 @@ class Trip:
         self.payment = payment
 
     def toPrint(self):
-        self.car.driver.toPrint()
+        self.car.toPrint()
         self.route.toPrint()
         self.payment.toPrint()
 

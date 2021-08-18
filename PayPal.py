@@ -8,4 +8,5 @@ class PayPal(Payment):
         self.email = email
 
     def toPrint(self):
-        print(f'Paid method: Paypal - Cost: {self.cost} - Email: {self.email}' )
+        super().toPrint()
+        print(f'Paid method: Paypal - Email: {self.email}' )

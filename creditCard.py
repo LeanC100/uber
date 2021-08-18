@@ -15,4 +15,5 @@ class CreditCard(Payment):
         self.cvv = cvv
 
     def toPrint(self):
-        print(f'Paid method: Paypal - Cost: {self.cost} - Name Complete: {self.name_complete} - Number: {self.number} - Expiration: {self.expiration}, CVV: {self.cvv}')
+        super().toPrint()
+        print(f'Paid method: Credit Card - Name Complete: {self.name_complete} \nNumber: {self.number} - Expiration: {self.expiration}, CVV: {self.cvv}')

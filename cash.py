@@ -6,4 +6,5 @@ class Cash(Payment):
         super().__init__(cost)
 
     def toPrint(self):
-        print(f'Paid method: Cash - Cost: {self.cost} ')
+        super().toPrint()
+        print(f'Paid method: Cash')

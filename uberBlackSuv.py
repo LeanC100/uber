@@ -8,3 +8,7 @@ class UberBlackSuv(Car):
         super().__init__(license, driver)
         self.typeCarAccepted = typeCarAccepted
         self.seatMaterial = seatMaterial
+
+    def toPrint(self):
+        super().toPrint()
+        print(f'Brand: {self.typeCarAccepted} - Model {self.seatMaterial}')

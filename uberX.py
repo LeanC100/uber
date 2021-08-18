@@ -9,4 +9,6 @@ class UberX(Car):
         self.brand = brand
         self.model = model
 
-        
+    def toPrint(self):
+        super().toPrint()
+        print(f'Brand: {self.brand} - Model {self.model}')

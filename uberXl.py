@@ -8,3 +8,7 @@ class UberXl(Car):
         super().__init__(license, driver)
         self.brand = brand
         self.model = model
+
+    def toPrint(self):
+        super().toPrint()
+        print(f'Brand: {self.brand} - Model {self.model}')
